@@ -2,7 +2,7 @@
 
 ## How to use
 
-To start forging electrons, download the folder or fork the repo.
+To start forging electrons, download the folder or fork the repo. I just discovered the template repo option and have now activated it for this project, so you can also use that option.
 Make sure you're in the `forging-electrons` folder then run `npm install` to install the necessary packages and then `npm start` to launch the application.
 Feel free to reach out to me `@beeverone` on most social media platforms. You can also send me an email to `thebeeverone@gmail.com`.
 
