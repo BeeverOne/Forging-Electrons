@@ -21,11 +21,11 @@ npx create-electron-app@latest forging-electrons --template=vite
 
 This should initialize your app and install the basic dependencies to get your app running. To test where we’re at to make sure everything initialized correctly, change directory to your app folder - `cd forging-electrons`, then run `npm start` to launch the app.
 
-![New App](/Forging-Electrons/public/screenshots-docs/Shot_01.png)
+![New App](./public/screenshots-docs/Shot_01.png)
 
 This is what my app looks like on first launch. I think the window is too small especially with dev tools open. To increase the window size, I’ll adjust the height and width of the main window in `forging-electrons/src/main.js` (the main process of the app). In order to see the changes you made, you need to restart the app by using `Ctrl/Cmd + C` in the terminal or closing the app as you would other apps.
 
-![Bigger App Window](/forging-electrons/public/screenshots-docs/Shot_02.png)
+![Bigger App Window](./public/screenshots-docs/Shot_02.png)
 
 I’m not sure how easy it is to tell from both pictures that the second one is bigger but it is, trust me :).
 
@@ -71,7 +71,7 @@ Now that all the necessary dependencies for the project are installed, we can re
 
 In order to get rid of a security warning you’ll get in the console by default;
 
-![CSP_Error_Shot_04](/forging-electrons/public/screenshots-docs/Shot_04.png)
+![CSP_Error_Shot_04](./public/screenshots-docs/Shot_04.png)
 
 we need to add some instructions (CSP - Content Security Policy) to the `head` of the `index.html` file. A CSP is used to control what resources the app can load and execute.
 
@@ -132,7 +132,7 @@ If you’re wondering why I’m not including the full code blocks, it’s becau
 
 At this point, the app is completely empty;
 
-![Empty App](/forging-electrons/public/screenshots-docs/Shot_05.png)
+![Empty App](./public/screenshots-docs/Shot_05.png)
 
 The rest of this documentation might be blurry, as I myself don’t fully understand what some of my code is doing. I’ll do my best to explain what I can anyway.
 
@@ -199,24 +199,24 @@ export default function App() {
 
 Now it should look like this;
 
-![App Gradient Background](/forging-electrons/public/screenshots-docs/Shot_06.png)
+![App Gradient Background](./public/screenshots-docs/Shot_06.png)
 
 Now I’ll add a drawer and bunch of other elements for the app.
-After a bunch of tinkering, I pretty pleased with where the app is now. I also understand what’s going on more but still won’t go into details much because my aforementioned reason.
+After a bunch of tinkerings, I pretty pleased with where the app is now. I also understand what’s going on more but still won’t go into details much because my aforementioned reason.
 
-![Forging-Electron-GIF-01.gif](/forging-electrons/public/screenshots-docs/Forging-Electron-GIF-01.gif)
+![Forging-Electron-GIF-01.gif](./public/screenshots-docs/Forging-Electron-GIF-01.gif)
 
 Now I’m done with the `App.jsx` file (for now :). It looks identical to the gif above. Now to the `MonitorScene.jsx` file.
 
 ### Current State
 
-![Forging-Electron-GIF-02.gif](/forging-electrons/public/screenshots-docs/Forging-Electron-GIF-02.gif)
+![Forging-Electron-GIF-02.gif](./public/screenshots-docs/Forging-Electron-GIF-02.gif)
 
 This is where the app is. I’ll push all the work I’ve done to the repository so that the journey to this point is documented. I didn’t show it here but resizing the app window breaks the camera because I’m not handling window-resize event yet.
 
 #### Resize Event
 
-I’ve just learned that R3F automatically handles window resizing and one of the elements of my `MonitorScene` overrides this. This is the source of the conflict.
+I’ve just learned that R3F automatically handles window resizing and one of the elements of my `MonitorScene` overrides this and this causes a conflict.
 
 ```react
 export default function MonitorScene() {
@@ -250,7 +250,7 @@ export default function MonitorScene() {
 }
 ```
 
-![Forging-Electron-GIF-03.gif](/forging-electrons/public/screenshots-docs/Forging-Electron-GIF-01.gif)
+![Forging-Electron-GIF-03.gif](./public/screenshots-docs/Forging-Electron-GIF-03.gif)
 
 ### Moving Forward
 
